@@ -1,6 +1,7 @@
 from django.db import models
 from .menu import Menu
 
+
 class Dish(models.Model):
     menus = models.ManyToManyField(Menu)
     description = models.TextField()

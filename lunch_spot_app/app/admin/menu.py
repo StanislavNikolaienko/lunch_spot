@@ -3,8 +3,8 @@ from ..models import Menu
 
 
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ('name', 'date')
-    search_fields = ('restaurant', 'date')
+    list_display = ("name", "date")
+    search_fields = ("restaurant", "date")
     list_per_page = 25
 
 
