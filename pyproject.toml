@@ -48,6 +48,7 @@ extend-exclude = '''
   | blib2to3
   | tests/data
   | profiling
+  | migrations
 )/
 '''
 # We use preview style for formatting Black itself. If you
@@ -87,6 +88,7 @@ exclude = [
     "node_modules",
     "venv",
     "migrations",
+    "__init__.py"
 ]
 per-file-ignores = {}
 

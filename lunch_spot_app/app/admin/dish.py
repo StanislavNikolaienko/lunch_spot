@@ -3,8 +3,8 @@ from ..models import Dish
 
 
 class DishAdmin(admin.ModelAdmin):
-    list_display = ('price', 'description')
-    search_fields = ('menu', 'name')
+    list_display = ("price", "description")
+    search_fields = ("menu", "name")
     list_per_page = 25
 
 

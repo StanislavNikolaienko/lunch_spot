@@ -9,7 +9,7 @@ class Poll(models.Model):
     date = models.DateField(auto_now_add=True)
 
     class Meta:
-        unique_together = ('employee', 'date')
+        unique_together = ("employee", "date")
 
     def __str__(self):
         return f"{self.employee} voted for {self.restaurant} on {self.date}"
