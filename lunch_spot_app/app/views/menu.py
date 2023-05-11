@@ -1,3 +1,4 @@
+from django.utils import timezone
 from rest_framework import serializers, status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -18,7 +19,7 @@ def update_menu(request, pk):
 
 @api_view(["GET"])
 def current_day_menu(request):
-    menu = Menu.objects.filter(auto_now=True)
+    menu = Menu.objects.filter(date=timezone.now().date())
     if menu:
         serializer = MenuSerializer(menu, many=True)
         return Response(serializer.data)
