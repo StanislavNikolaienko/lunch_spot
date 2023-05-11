@@ -11,7 +11,7 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1"]
 
 
 # Application definition
